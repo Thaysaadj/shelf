@@ -1,0 +1,164 @@
+.containerShelf {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCarousel {
+  display: flex;
+  overflow-y: hidden;
+  width: 1000px;
+  background-color: #E5E5E5;
+}
+
+.contentShelf {
+  display: flex;
+}
+
+
+.sectionCard {
+  width: 300px;
+  height: 515px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.imgCard {
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.imgCard img {
+  width: 100%;
+}
+
+.iconFavorite {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.iconFavorite svg {
+  width: 20px;
+  margin-top: 5px;
+  border-style: none;
+}
+
+.iconFavorite svg path {
+  fill:#F2F3F6;
+  stroke:#1C1C1C;
+}
+
+.iconFavorite:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
+}
+
+.iconFavorite:hover {
+  filter: brightness(0.9);
+}
+
+.iconFavorite.checked {
+  background-color: #F3151B;
+}
+
+.iconFavorite.checked svg path{
+  stroke : #F3151B;
+}
+
+.infoCard {
+  width: 250px;
+  max-height: fit-content;
+}
+
+.descriptionCard p {
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.oldPtice p {
+  font-size: 10px;
+  text-decoration: line-through;
+  text-align: left;
+  font-weight: 700;
+  color: #A5AAAD;
+  margin: 0;
+}
+
+.newPrice p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 700;
+  color: #DA4C4F;
+  margin: 0;
+}
+
+.paymentConditions {
+  display: flex;
+  font-size: 12px;
+}
+
+.paymentConditions p {
+  margin: 0;
+  color: #6e6e6e;
+}
+
+.paymentConditions p strong {
+  color: #000;
+}
+
+.buttonCard img {
+  width: 12px;
+  margin-right: 15px;
+}
+
+.buttonCard {
+  width: 180px;
+  height: 40px;
+  background-color: #40B25C;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  border-style: none;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.3s linear;
+}
+.buttonCard:hover{
+  filter: brightness(0.9);
+}
+
+.buttonCard.checked {
+  color: #000;
+  background-color: #A3F9B9;
+}
+
+.buttonCard:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 25px 1px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+
+@media (max-width:768px){
+  .sectionCard {
+    margin: 10px;
+  }
+}
