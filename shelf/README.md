@@ -31,7 +31,7 @@ Esse projeto foi criado com o objetivo de apresentar e praticar minhas habilidad
 
 # 🛠️ Abrir e rodar o proje
 
-**npm install **
+**npm install** > 
 **npm start**
 
 # :heavy_check_mark: Técnicas e tecnologias utilizadas
